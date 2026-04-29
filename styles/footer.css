@@ -1,0 +1,60 @@
+@font-face {
+  src: url(../FONT/norwester.otf);
+  font-family: norwester;
+}
+
+@font-face {
+  src: url(../FONT/Notera_PersonalUseOnly.ttf);
+  font-family: notera;
+}
+
+* {
+  margin: 0;
+  top: 0;
+  padding: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+  top: 0;
+  bottom: 0;
+}
+
+footer {
+  font-family: sans-serif;
+  height: 100px;
+  background-color: #F1F1F1;
+  color: #000;
+  text-align: center;
+}
+
+footer h3 {
+  font-size: 25px;
+  text-align: center;
+  font-family: notera;
+  text-transform: capitalize;
+}
+
+footer ul {
+  border-top: solid;
+  border-bottom: solid;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+}
+
+footer ul li a{
+  font-style: normal;
+  font-size: 20px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: norwester;
+  color: #000;
+}
+
+footer ul li a:hover {
+  text-shadow: 0px 0px 1px brown;
+  transition: 0.5s;
+}

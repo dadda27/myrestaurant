@@ -1,0 +1,150 @@
+@font-face {
+  src: url(../FONT/norwester.otf);
+  font-family: norwester;
+}
+
+@font-face {
+  src: url(../FONT/Notera_PersonalUseOnly.ttf);
+  font-family: notera;
+}
+
+* {
+  margin: 0;
+  top: 0;
+  padding: 0;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+.side-portadas-wrapper {
+  visibility: hidden;
+  position: fixed;
+  height: 100%;
+  width: 20%;
+  border: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  //align-items: center;
+  background-color: rgba(79, 17, 4, 0.9);
+}
+
+.side-portadas-title {
+  text-align: center;
+  border: solid;
+  background-color: #F1F1F1;
+
+}
+
+.portadas {
+  height: 80%;
+  text-align: center;
+}
+
+.portadas ul{
+  border: solid;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color:  #F1F1F1;
+}
+
+.portadas ul li{
+  list-style: none;
+  //margin-left: 40px;
+}
+
+.portadas ul li a{
+  text-decoration: none;
+}
+
+.restmenu-wrapper {
+  padding: 0 10%;
+}
+
+.platos {
+  text-transform: uppercase;
+  //padding: 5%;
+  //border: solid yellow;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.portada {
+  //border: solid green;
+  margin-bottom: 15px;
+}
+
+
+.portada-name {
+  //border: solid pink;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: solid;
+}
+
+.portada-name h2 {
+  //padding: 0 5%;
+  //border-bottom: solid;
+  font-weight: bolder;
+  font-size: 30px;
+  font-family: norwester;
+}
+
+#portada-category {
+  font-size: 16px;
+  font-family: notera;
+  color: #000;
+  font-weight: bolder;
+  text-transform: lowercase;
+  margin-right: 0;
+  white-space: nowrap;
+}
+
+.portada ul li {
+  list-style-type: none;
+}
+
+.portada ul li span h2::before{
+  content: "•"; /* Insert content that looks like bullets */
+  vertical-align: sub;
+  //border: solid;
+  line-height: 0px;
+  padding-right: 10px;
+  margin-left: -20px;
+  font-size: 50px;/* Or a color you prefer */
+}
+
+
+.plato {
+  font-family: norwester;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+#plato-name span  {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 5px;
+}
+
+
+p {
+  margin: 0 0 30px;
+  text-transform: lowercase;
+  //font-family: arial;
+  font-style: italic;
+  font-weight: bold;
+}

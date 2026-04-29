@@ -1,0 +1,246 @@
+/*importamos fonts pasados por el restaurante*/
+@font-face {
+  src: url(../FONT/norwester.otf);
+  font-family: norwester;
+}
+
+@font-face {
+  src: url(../FONT/Notera_PersonalUseOnly.ttf);
+  font-family: notera;
+}
+
+* {
+  margin: 0;
+  top: 0;
+  padding: 0;
+}
+
+ html, body {
+  overflow-x: hidden;
+  top: 0;
+  bottom: 0;
+}
+
+/*contenedor menú principal header*/
+.main-menu-container {
+  //border: solid;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(245, 245, 245, 0.3);
+}
+
+.logo {
+  order: 0;
+  border: solid #F5F5F5;
+  min-height: 90px;
+  min-width: 90px;
+  //align-self: flex-start;
+  //margin-top: 35px;
+  border-radius: 50%;
+  background-image: url("../img/logo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*nombre restaurante en el header*/
+.name span a {
+  order: 0;
+  border-bottom: solid;
+  border-top: solid;
+  padding: 5 20px;
+  white-space: nowrap;
+  font-size: 30px;
+  font-family: norwester;
+  font-weight: bolder;
+  //font-family: 'Alfa Slab One', cursive;
+  color: #000000;
+  text-shadow: -3px -2px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+/*menú nav en pantallas grandes no se enseña en móviles*/
+.main-menu {
+  display: none;
+}
+
+/*boton burger para menu móviles*/
+.burger {
+  order: 0;
+  //border-left: solid;
+  //border-right: solid;
+  height: 90px;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: 0.1s ease-out;
+}
+
+.burger_btn {
+  width: 30px;
+  height: 4px;
+  background-color: #000;
+  transition: 0.3s ease-in-out;
+}
+
+.burger_btn:before, .burger_btn:after {
+  content: "";
+  width: 30px;
+  height: 4px;
+  background-color: #000;
+  position: absolute;
+}
+
+.burger_btn:before {
+  transform: translateY(-10px);
+}
+
+.burger_btn:after {
+  transform: translateY(10px);
+}
+
+.open .burger_btn {
+  top: 13px;
+}
+
+.burger.open .burger_btn {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.burger.open .burger_btn:before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.burger.open .burger_btn:after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.burger:hover {
+  border-top: solid;
+  border-bottom: solid;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*importamos fonts pasados por el restaurante*/
+.slide-menu-container {
+  margin-top: -350px;
+  position: absolute;
+  /*esconde scrollbar en Firefox*/
+  scrollbar-width: none;
+}
+
+.slide-menu-container::-webkit-scrollbar {
+  display: none;
+}
+
+.slide-menu ul {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style-type: none;
+  text-align: center;
+  background-color: #000;
+}
+
+.slide-menu ul li {
+  padding: 5px 30px;
+}
+
+.slide-menu ul li a {
+  text-decoration: none;
+  color: #FFF;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-family: norwester;
+  //font-family: 'Alfa Slab One', cursive;
+  font-size: 20px;
+}
+
+.slide-menu ul li:hover {
+  background-color: #696969;
+  transition: 0.5s;
+}
+
+.slide-menu ul li a:hover {
+  width: 50%;
+  color: #F8F8FF;
+  text-shadow: 0px 0px 3px #FFF;
+  transition: 0.5s;
+}
+
+@media all and (max-width: 600px) {
+  .name span a {
+    font-size: 15px;
+    //border: none;
+  }
+}
+
+@media all and (min-width: 1500px) {
+  .main-menu-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .main-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /7margin-right: -2%;
+    border: solid #A9A9A9;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .main-menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    //width: 400px;
+    padding: 20px 0;
+    padding-left: 50px;
+  }
+
+  .main-menu ul li {
+    list-style-type: none;
+    margin-left: 10px;
+    border-radius: 50px;
+    white-space: nowrap;
+  }
+
+  .main-menu ul li a {
+    padding: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: norwester;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  .main-menu ul li:hover {
+    background-color: #F5F5F5;
+    transition: 0.5s;
+  }
+
+  .main-menu ul li a:hover {
+    text-shadow: 0px 0px 1px brown;
+    transition: 0.5s;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .slide-menu-container {
+    display: none;
+  }
+}

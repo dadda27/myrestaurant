@@ -1,0 +1,257 @@
+
+@font-face {
+  src: url(../FONT/norwester.otf);
+  font-family: norwester;
+}
+
+@font-face {
+  src: url(../FONT/Notera_PersonalUseOnly.ttf);
+  font-family: notera;
+}
+
+* {
+  margin: 0;
+  top: 0;
+  padding: 0;
+}
+
+body, html {
+  overflow-x: hidden;
+  top: 0;
+  bottom: 0;
+}
+
+section {
+  background-color: rgba(0,0,0, 1);
+  //background-color: rgba(79, 17, 4, 0.9);
+  width: auto;
+}
+
+.carousel-wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-content: center;
+  position: relative;
+}
+
+.imgs {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100vw;
+  height: auto;
+}
+
+/*.img0 {
+  background-image: url("../img/carousel4.jpg");
+}*/
+.img0 {
+  background-image: url("../img/Vecchia_Fattoria_foto/11.jpg");
+}
+
+.img1 {
+  background-image: url("../img/Vecchia_Fattoria_foto/4.jpg");
+}
+
+.img2 {
+  background-image: url("../img/Vecchia_Fattoria_foto/5.jpg");
+}
+
+.img3 {
+  background-image: url("../img/Vecchia_Fattoria_foto/6.jpg");
+}
+
+.img4 {
+  background-image: url("../img/Vecchia_Fattoria_foto/7.jpg");
+}
+
+.img5 {
+  background-image: url("../img/Vecchia_Fattoria_foto/8.jpg");
+}
+
+.img6 {
+  background-image: url("../img/Vecchia_Fattoria_foto/9.jpg");
+}
+
+.img7 {
+  background-image: url("../img/Vecchia_Fattoria_foto/10.jpg");
+}
+
+.img8 {
+  background-image: url("../img/Vecchia_Fattoria_foto/11.jpg");
+}
+
+.img9 {
+  background-image: url("../img/Vecchia_Fattoria_foto/4.jpg");
+}
+
+#currImg {
+
+}
+
+.arrows {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50vh;
+}
+
+.arrow {
+  padding: 2%;
+  width: auto;
+}
+
+.arrow:hover {
+  background-color: rgba(242, 242, 242, 0.3);
+  transition: 0.3s ease-in-out;
+}
+
+.arrow i {
+  font-size: 50px;
+  color: #FFF;
+  //background-color: rgba(242, 242, 242, 0.5);
+  //border-radius: 50%;
+  cursor: pointer;
+}
+
+.arrow i:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+}
+
+.arrow-left  {
+
+}
+
+.arrow-right  {
+}
+
+.carousel-message {
+  position: absolute;
+  width: 250px;
+  margin: 67vh 10vw 10vh 60vw;
+  font-family: notera;
+  font-size: 19px;
+  color: #FFF;
+  text-align: center;
+  box-shadow: 0 20px 20px rgb(0,0,0,0.5);
+  transform: translateZ(200px);
+  //border: solid;
+  border-radius: 30%;
+  background-color: rgba(146, 154, 146, 0.5);
+  padding: 2%;
+  //box-shadow: 10px 5px 5px black;
+}
+
+.welcome-wrapper {
+  height: 100vh;
+  //border: solid yellow;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 5%;
+  background-color: #000;
+//background-image: url("../img/carousel1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.welcome {
+  //border: solid #000;
+  text-align: center;
+  color: RGBA(255,255,255, 1);
+  //background-color: RGBA(245, 245, 245, 0.8);
+  //background-color: RGB(60, 50, 50, 0.3);
+  padding: 10%;
+  margin: auto;
+  border-radius: 50px;
+  font-size: 20px;
+  font-family: 'Alfa Slab One', cursive;
+  //font-family: 'Dancing Script', cursive;
+}
+
+.after-welcome-wrapper {
+  height: 100vh;
+  //border: solid yellow;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 5%;
+//background-color: #000;
+  background-image: url("../img/vecchia_Fattoria_foto/61.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.after-welcome{
+  font-size: 20px;
+  font-family: 'Alfa Slab One', cursive;
+  text-shadow: -0.5px 0 #F6F6F6;
+}
+
+@media all and (min-width: 1300px) {
+
+.imgs {
+  margin: 0 auto;
+}
+
+.img {
+  //background-size: 70vw;
+}
+}
+
+
+@media all and (max-width: 600px) {
+
+.carousel-wrapper {
+  margin-top: 100px;
+  height: 100vh;
+}
+
+.img {
+  background-size: cover;
+  height: calc(80vh - 90px);
+  //height: 300px;
+}
+
+.arrows {
+  margin-top: 43vh;
+}
+
+.carousel-message {
+  display: none;
+}
+}
+
+
+@media all and (max-height: 400px) {
+
+.carousel-wrapper {
+  margin-top: 100px;
+  height: 150vh;
+}
+
+.img {
+  background-size: cover;
+  height: calc(150vh - 90px);
+}
+
+.arrows {
+  margin-top: 75vh;
+}
+
+}
