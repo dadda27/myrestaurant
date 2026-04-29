@@ -1,14 +1,8 @@
 /*Style for ../fixed_pages/header.html*/
 /*Importing fonts*/
-@font-face {
-  src: url(../FONT/norwester.otf);
-  font-family: norwester;
-}
 
-@font-face {
-  src: url(../FONT/Notera_PersonalUseOnly.ttf);
-  font-family: notera;
-}
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
   margin: 0;
@@ -35,12 +29,9 @@
 }
 
 .logo {
-  order: 0;
   border: solid #F5F5F5;
   min-height: 90px;
   min-width: 90px;
-  //align-self: flex-start;
-  //margin-top: 35px;
   border-radius: 50%;
   background-image: url("../img/logo.jpg");
   background-size: contain;
@@ -49,15 +40,14 @@
 
 /*Restaurant name in the Header*/
 .name span a {
-  order: 0;
+  background-color: rgba(255, 255, 255, 0.7);
   border-bottom: solid;
   border-top: solid;
   padding: 5 20px;
   white-space: nowrap;
-  font-size: 30px;
-  font-family: norwester;
-  font-weight: bolder;
-  //font-family: 'Alfa Slab One', cursive;
+  font-size: 40px;
+  font-family: 'Monoton', sans-serif;
+  font-weight: 400;
   color: #000000;
   text-shadow: -3px -2px rgba(0, 0, 0, 0.1);
   text-decoration: none;
@@ -160,10 +150,12 @@
   text-decoration: none;
   color: #FFF;
   white-space: nowrap;
-  text-transform: uppercase;
-  font-family: norwester;
-  //font-family: 'Alfa Slab One', cursive;
-  font-size: 20px;
+  font-family: 'Tourney', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 30px;
 }
 
 .slide-menu ul li:hover {
@@ -181,7 +173,6 @@
 @media all and (max-width: 600px) {
   .name span a {
     font-size: 15px;
-    //border: none;
   }
 }
 
@@ -220,9 +211,12 @@
   .main-menu ul li a {
     padding: 30px;
     text-decoration: none;
-    font-size: 20px;
-    font-family: norwester;
-    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'Tourney', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
     color: #000000;
   }
 

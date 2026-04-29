@@ -12,6 +12,7 @@
   let getBurgerBarBefore = window.getComputedStyle(document.querySelector(".burger div"), ":before");
   let getBurgerBarAfter = document.querySelector(":after");
 
+/*Opening the slide menu on click*/
 getBurgerBtn.addEventListener("click", function() {
 
   let getWindowHeight = window.innerHeight;
@@ -19,7 +20,7 @@ getBurgerBtn.addEventListener("click", function() {
   let getSlideMenuHeight = getSlideMenu.clientHeight;
   let getMenusHeight = getMainMenuHeight + getSlideMenuHeight
 
-  /*Opening the slide menu on click*/
+
   console.log(getWindowHeight);
   if (click === false) {
     click = true;

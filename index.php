@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="styles/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -87,7 +87,7 @@
     <div class="after-welcome-wrapper">
       <div class="after-welcome">
 
-        <h1>Hearty Food</h1>
+        <h1>More Food</h1>
 
       </div>
     </div>

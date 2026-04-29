@@ -1,13 +1,7 @@
-/*Style for menu.php, the menu of the restaurant*/
-@font-face {
-  src: url(../FONT/norwester.otf);
-  font-family: norwester;
-}
-
-@font-face {
-  src: url(../FONT/Notera_PersonalUseOnly.ttf);
-  font-family: notera;
-}
+/*Style for ../fixed_pages/menu.php, the menu of the restaurant*/
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
 * {
   margin: 0;
@@ -28,7 +22,6 @@ body, html {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  //align-items: center;
   background-color: rgba(79, 17, 4, 0.9);
 }
 
@@ -68,8 +61,6 @@ body, html {
 
 .platos {
   text-transform: uppercase;
-  //padding: 5%;
-  //border: solid yellow;
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -84,7 +75,6 @@ body, html {
 
 
 .portada-name {
-  //border: solid pink;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -93,19 +83,16 @@ body, html {
 }
 
 .portada-name h2 {
-  //padding: 0 5%;
-  //border-bottom: solid;
-  font-weight: bolder;
   font-size: 30px;
-  font-family: norwester;
+  font-family: 'Monoton', sans-serif;
+  font-weight: 400;
 }
 
 #portada-category {
-  font-size: 16px;
-  font-family: notera;
+  font-size: 13px;
+  font-family: 'Monoton', sans-serif;
+  font-weight: 400;
   color: #000;
-  font-weight: bolder;
-  text-transform: lowercase;
   margin-right: 0;
   white-space: nowrap;
 }
@@ -126,7 +113,10 @@ body, html {
 
 
 .plato {
-  font-family: norwester;
+  font-size: 20px;
+  font-family: 'Dancing Script', cursive;
+  font-weight: bolder;
+  text-transform: capitalize;
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
@@ -136,7 +126,6 @@ body, html {
 
 #plato-name span  {
   font-size: 15px;
-  text-transform: uppercase;
   font-weight: 600;
   line-height: 5px;
 }
@@ -145,7 +134,6 @@ body, html {
 p {
   margin: 0 0 30px;
   text-transform: lowercase;
-  //font-family: arial;
   font-style: italic;
   font-weight: bold;
 }

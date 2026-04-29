@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="../styles/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
 
 </head>
 
@@ -40,15 +39,15 @@
     </div>
 
     <div class="contacto facebook">
-      <a href="#">Facebook<i class="fab fa-facebook-square"></i></a>
+      <a href="#"><i class="fab fa-facebook-square"></i></a>
     </div>
 
     <div class="contacto instagram">
-      <a href="#">Instagram<i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
     </div>
 
     <div class="contacto X">
-      <a href="#">X<i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
     </div>
 
 

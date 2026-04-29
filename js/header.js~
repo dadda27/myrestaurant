@@ -55,8 +55,8 @@ getBurgerBtn.addEventListener("click", function() {
           }
         }
 
-          /*if the slide-from-top menu is opened (narrow window size) 
-            and then the display window is enlarged to fit normal horizontal menu, 
+          /*if the slide-from-top menu is opened (browser window is narrow)
+            and then the browser window is enlarged to fit normal horizontal menu, 
             it hides the slide-from-top menu and makes it unscrollable*/
             window.addEventListener("resize", function() {
               let getDinamicWindowHeight = window.innerHeight;
