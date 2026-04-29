@@ -1,4 +1,3 @@
-
 @font-face {
   src: url(../FONT/norwester.otf);
   font-family: norwester;
@@ -49,9 +48,6 @@ section {
   height: auto;
 }
 
-/*.img0 {
-  background-image: url("../img/carousel4.jpg");
-}*/
 .img0 {
   background-image: url("../img/Vecchia_Fattoria_foto/11.jpg");
 }
@@ -160,7 +156,7 @@ section {
   align-items: flex-end;
   padding: 5%;
   background-color: #000;
-//background-image: url("../img/carousel1.jpg");
+//background-image: url("../img/carousel1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -188,7 +184,8 @@ section {
   align-items: flex-end;
   padding: 5%;
 //background-color: #000;
-  background-image: url("../img/vecchia_Fattoria_foto/61.jpg");
+  background-image: url("../img/vecchia_Fattoria_foto/62.jpg");
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -215,7 +212,47 @@ section {
 }
 
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 1024px) {
+
+  .img0 {
+    background-image: url("../img/Vecchia_Fattoria_foto/11.png");
+  }
+
+  .img1 {
+    background-image: url("../img/Vecchia_Fattoria_foto/4.png");
+  }
+
+  .img2 {
+    background-image: url("../img/Vecchia_Fattoria_foto/5.png");
+  }
+
+  .img3 {
+    background-image: url("../img/Vecchia_Fattoria_foto/6.png");
+  }
+
+  .img4 {
+    background-image: url("../img/Vecchia_Fattoria_foto/7.png");
+  }
+
+  .img5 {
+    background-image: url("../img/Vecchia_Fattoria_foto/8.png");
+  }
+
+  .img6 {
+    background-image: url("../img/Vecchia_Fattoria_foto/9.png");
+  }
+
+  .img7 {
+    background-image: url("../img/Vecchia_Fattoria_foto/10.png");
+  }
+
+  .img8 {
+    background-image: url("../img/Vecchia_Fattoria_foto/11.png");
+  }
+
+  .img9 {
+    background-image: url("../img/Vecchia_Fattoria_foto/4.png");
+  }
 
 .carousel-wrapper {
   margin-top: 100px;

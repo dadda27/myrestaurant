@@ -1,4 +1,3 @@
-/*Style for ../fixed_pages/header.html*/
 /*Importing fonts*/
 @font-face {
   src: url(../FONT/norwester.otf);

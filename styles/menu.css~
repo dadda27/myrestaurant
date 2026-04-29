@@ -1,4 +1,4 @@
-/*Style for ../fixed_pages/menu.php, the menu of the restaurant*/
+/*Style for menu.php, the menu of the restaurant*/
 @font-face {
   src: url(../FONT/norwester.otf);
   font-family: norwester;

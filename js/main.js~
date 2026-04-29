@@ -58,7 +58,7 @@ getImgs.addEventListener("transitionend", function() {
   }
 })
 
-//When slider on it doesn't transition the image resizing
+//when slider on it doesn't transition the image resizing
 window.addEventListener("resize", function() {
   getImgs.style.transition="none";
 })
