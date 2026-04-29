@@ -1,12 +1,17 @@
+/*Style for index.php. Contains the images URLs for the carousel. 
+Replace with yours*/
+/*
 @font-face {
   src: url(../FONT/norwester.otf);
   font-family: norwester;
 }
-
+*/
+/*
 @font-face {
   src: url(../FONT/Notera_PersonalUseOnly.ttf);
   font-family: notera;
 }
+*/
 
 * {
   margin: 0;
@@ -47,46 +52,48 @@ section {
   min-width: 100vw;
   height: auto;
 }
-
+/*As first image of the carousel, place the last image*/
 .img0 {
-  background-image: url("../img/Vecchia_Fattoria_foto/11.jpg");
+  background-image: url("../img/4.jpg");
 }
 
 .img1 {
-  background-image: url("../img/Vecchia_Fattoria_foto/4.jpg");
+  background-image: url("../img/1.jpg");
 }
 
 .img2 {
-  background-image: url("../img/Vecchia_Fattoria_foto/5.jpg");
+  background-image: url("../img/2.jpg");
 }
 
 .img3 {
-  background-image: url("../img/Vecchia_Fattoria_foto/6.jpg");
+  background-image: url("../img/3.jpg");
 }
 
 .img4 {
-  background-image: url("../img/Vecchia_Fattoria_foto/7.jpg");
+  background-image: url("../img/4.jpg");
 }
-
+/*
 .img5 {
-  background-image: url("../img/Vecchia_Fattoria_foto/8.jpg");
+  background-image: url("../img/1.jpg");
 }
 
 .img6 {
-  background-image: url("../img/Vecchia_Fattoria_foto/9.jpg");
+  background-image: url("../img/9.jpg");
 }
 
 .img7 {
-  background-image: url("../img/Vecchia_Fattoria_foto/10.jpg");
+  background-image: url("../img/10.jpg");
 }
 
 .img8 {
-  background-image: url("../img/Vecchia_Fattoria_foto/11.jpg");
+  background-image: url("../img/11.jpg");
+}
+*/
+/*As last image of the carousel place the first image, such img1.jpg*/
+.img9 {
+  background-image: url("../img/1.jpg");
 }
 
-.img9 {
-  background-image: url("../img/Vecchia_Fattoria_foto/4.jpg");
-}
 
 #currImg {
 
@@ -135,7 +142,7 @@ section {
   position: absolute;
   width: 250px;
   margin: 67vh 10vw 10vh 60vw;
-  font-family: notera;
+  font-family: "Gill Sans", sans-serif;
   font-size: 19px;
   color: #FFF;
   text-align: center;
@@ -184,7 +191,7 @@ section {
   align-items: flex-end;
   padding: 5%;
 //background-color: #000;
-  background-image: url("../img/vecchia_Fattoria_foto/62.jpg");
+  background-image: url("../img/62.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -214,44 +221,46 @@ section {
 
 @media all and (max-width: 1024px) {
 
+/*As first image of the carousel, place the last image*/
   .img0 {
-    background-image: url("../img/Vecchia_Fattoria_foto/11.png");
+    background-image: url("../img/4.jpg");
   }
 
   .img1 {
-    background-image: url("../img/Vecchia_Fattoria_foto/4.png");
+    background-image: url("../img/1.jpg");
   }
 
   .img2 {
-    background-image: url("../img/Vecchia_Fattoria_foto/5.png");
+    background-image: url("../img/2.jpg");
   }
 
   .img3 {
-    background-image: url("../img/Vecchia_Fattoria_foto/6.png");
+    background-image: url("../img/3.jpg");
   }
 
   .img4 {
-    background-image: url("../img/Vecchia_Fattoria_foto/7.png");
+    background-image: url("../img/4.jpg");
   }
-
+/*
   .img5 {
-    background-image: url("../img/Vecchia_Fattoria_foto/8.png");
+    background-image: url("../img/8.png");
   }
 
   .img6 {
-    background-image: url("../img/Vecchia_Fattoria_foto/9.png");
+    background-image: url("../img/9.png");
   }
 
   .img7 {
-    background-image: url("../img/Vecchia_Fattoria_foto/10.png");
+    background-image: url("../img/10.png");
   }
 
   .img8 {
-    background-image: url("../img/Vecchia_Fattoria_foto/11.png");
+    background-image: url("../img/11.png");
   }
-
-  .img9 {
-    background-image: url("../img/Vecchia_Fattoria_foto/4.png");
+*/
+/*As last image of the carousel place the first image, such img1.jpg*/
+ .img9 {
+    background-image: url("../img/1.jpg");
   }
 
 .carousel-wrapper {

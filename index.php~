@@ -7,7 +7,7 @@
 
 <head>
 
-  <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="stylesheet" href="styles/main.css" />
   <link rel="stylesheet" href="styles/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -35,7 +35,7 @@
 
         </div>
         <div class="img img4">
-
+<!--
         </div>
         <div class=" img img5">
 
@@ -47,7 +47,7 @@
 
         </div>
         <div class="img img8">
-
+-->
         </div>
         <div class="img img9" id="firstclone">
 
