@@ -20,7 +20,7 @@ Currently implemented pages are:
 - The Contacts page embeds GoogleMap to show the location.
 
 ## Usage
-If you find this project interesting (really??), you can clone the repository, check the code, modify it, do anything you want, of course, and run the webpage in your web server (Apache / IIS / Nginx etc.)
+If you find this project interesting (really??), you can clone the repository, check the code, modify it, do anything you want, of course, and run the webpage on your web server (Apache / IIS / Nginx etc.)
 > [!NOTE]
 > Your web server must have PHP installed / enabled
 
