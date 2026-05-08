@@ -50,7 +50,7 @@ You can then open your browser and type the URL:\
   ***localhost:your_local_port***
   
 ## Check the [Wiki](https://github.com/dadda27/myrestaurant/wiki)
-If you would like to have more details about some [features](#features)
+If you would like to have more details about some of the [features](#features)
 \
 \
 \
