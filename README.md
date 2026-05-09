@@ -38,7 +38,7 @@ If you don't have any web server at your disposal (why you should, of course), b
   ````
 - If you just want to see the website in action, you can pull directly the website image (***webpage + php:7.2-apache***) from my Docker Hub repository:
   ```
-  sudo docker pull dadda27/myrestaurant:
+  sudo docker pull dadda27/myrestaurant
   sudo docker run -d -p 127.0.0.1:<your_local_port>:80 dadda27/myrestaurant
   ````
   or directly pull and run it with:
