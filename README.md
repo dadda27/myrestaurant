@@ -17,7 +17,7 @@ Currently implemented pages are:
 ## Features
 - Supports resizing (width and height, smartphone horizontal/vertical)
 - The Home page features an images carousel which works by clicking the left/right white arrows
-- The Contacts page embeds GoogleMap to show the location.
+- The Contacts page embeds Google Maps to show the location.
 
 ## Usage
 If you find this project interesting (really??), you can clone the repository, check the code, modify it, do anything you want, of course, and run the webpage on your web server (Apache / IIS / Nginx etc.)
