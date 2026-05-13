@@ -1,7 +1,7 @@
-# Directories
+# DIRECTORIES
 backups/
 FONT/
 
-# Files
+# FILES
 .maps_api_key
-
+.gitignore

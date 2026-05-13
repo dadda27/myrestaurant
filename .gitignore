@@ -1,7 +1,14 @@
-# Directories
+# DIRECTORIES
 backups/
 FONT/
 
-# Files
+# FILES:
+# Duplicate backups from IDE
+*~
+
+# Google Maps API key to be placed in index.php <script></script>
 .maps_api_key
+
+# Dockerignore
+.dockerignore
 
