@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/footer.css">
+  </head>
+  <body>
+    <footer>
+      <h3>Más información</h3>
+      <ul>
+        <li><a href="../fixed_pages/contactos.php">contactos</a></li>
+        <li><a href="https://goo.gl/maps/A48FGNZMkYyNhAMk7">encuentranos</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
