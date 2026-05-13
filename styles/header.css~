@@ -2,7 +2,6 @@
 /*Importing fonts*/
 
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
@@ -62,8 +61,6 @@
 /*Burger button*/
 .burger {
   order: 0;
-  //border-left: solid;
-  //border-right: solid;
   height: 90px;
   width: 90px;
   display: flex;

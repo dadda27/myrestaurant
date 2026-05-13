@@ -6,13 +6,8 @@ let getArrowR = document.querySelector(".right-arrow");
 let getImgs = document.querySelector(".imgs");
 let getImg = document.querySelectorAll(".img");
 let getImgLength = getImg.length;
-let getCurrImg = document.querySelector(".currImg");
-let arrClick = false;
 let counter = 1;
-let getSize = getImg[counter].clientWidth;
-let currImgPos = getImg[counter];
-let prevImgPos = counter - 1;
-let nextImgPos = counter + 1;
+
 
 /*IMAGES CAROUSEL*/
 /*Starts counting the carousel from the second image*/
@@ -23,7 +18,7 @@ let next = function() {
   if (counter >= getImgLength - 1) return;
   getImgs.style.transition=" transform 1s ease-in-out";
   counter++;
-  getImgs.style.transform='translateX(' + (counter * -1) + '00vw)';
+  getImgs.style.transform='translateX(' + (-counter) + '00vw)';
 }
 
 /*Moves the carousel backwards*/
@@ -49,7 +44,7 @@ getImgs.addEventListener("transitionend", function() {
   if (getImg[counter].id === "lastclone") {
     getImgs.style.transition="none";
     counter = getImgLength - 2;
-    getImgs.style.transform='translateX(' + (counter * -1) + '00vw)';
+    getImgs.style.transform='translateX(' + (-counter) + '00vw)';
   }
   if (getImg[counter].id === "firstclone") {
     getImgs.style.transition = "none";

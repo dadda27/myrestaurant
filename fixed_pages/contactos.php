@@ -73,7 +73,7 @@
       });
     }
   </script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVgcoPlpVCFMqY2QYVfJjJI-T9fzGH9VQ&callback=initMap">
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=<replace-with-your-Google-Map_apy_key>&callback=initMap">
   </script>
   <!--END SCRIPT GOOGLE MAPS-->
 

@@ -176,7 +176,7 @@ section {
   justify-content: center;
   align-items: flex-end;
   padding: 5%;
-  background-image: url("../img/62.jpg");
+  /background-image: url("../img/62.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -206,48 +206,6 @@ section {
 
 
 @media all and (max-width: 1024px) {
-
-/*As first image of the carousel, place the last image*/
-  .img0 {
-    background-image: url("../img/4.jpg");
-  }
-
-  .img1 {
-    background-image: url("../img/1.jpg");
-  }
-
-  .img2 {
-    background-image: url("../img/2.jpg");
-  }
-
-  .img3 {
-    background-image: url("../img/3.jpg");
-  }
-
-  .img4 {
-    background-image: url("../img/4.jpg");
-  }
-/*
-  .img5 {
-    background-image: url("../img/8.png");
-  }
-
-  .img6 {
-    background-image: url("../img/9.png");
-  }
-
-  .img7 {
-    background-image: url("../img/10.png");
-  }
-
-  .img8 {
-    background-image: url("../img/11.png");
-  }
-*/
-/*As last image of the carousel place the first image, such img1.jpg*/
- .img9 {
-    background-image: url("../img/1.jpg");
-  }
 
 .carousel-wrapper {
   margin-top: 100px;

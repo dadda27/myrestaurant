@@ -53,7 +53,7 @@
   text-decoration: none;
 }
 
-/*nav menu in Desktop display view*/
+/*nav menu in Smartphone display view*/
 .main-menu {
   display: none;
 }
@@ -61,8 +61,6 @@
 /*Burger button*/
 .burger {
   order: 0;
-  //border-left: solid;
-  //border-right: solid;
   height: 90px;
   width: 90px;
   display: flex;
@@ -186,7 +184,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /7margin-right: -2%;
+    /margin-right: -2%;
     border: solid #A9A9A9;
     border-radius: 50px;
     background-color: rgba(255, 255, 255, 0.5);

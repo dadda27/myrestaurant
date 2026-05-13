@@ -35,8 +35,9 @@
 
         </div>
         <div class="img img4">
-<!-- Add here other img blocks
+
         </div>
+<!-- Add here other img blocks
         <div class=" img img5">
 
         </div>
@@ -47,8 +48,9 @@
 
         </div>
         <div class="img img8">
--->
+
         </div>
+-->
         <div class="img img9" id="firstclone">
 
         </div>
