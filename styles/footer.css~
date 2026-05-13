@@ -1,0 +1,57 @@
+/*Style for ../fixed_pages/footer.html*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  top: 0;
+  padding: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+  top: 0;
+  bottom: 0;
+}
+
+footer {
+  font-family: sans-serif;
+  height: 100px;
+  background-color: #F1F1F1;
+  color: #000;
+  text-align: center;
+}
+
+footer h3 {
+  font-size: 25px;
+  text-align: center;
+  font-family: "Dancing Script", sans-serif;
+  font-style: normal;
+}
+
+footer ul {
+  border-top: solid;
+  border-bottom: solid;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+}
+
+footer ul li a{
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Tourney", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  color: #000;
+}
+
+footer ul li a:hover {
+  text-shadow: 0px 0px 1px brown;
+  transition: 0.5s;
+}

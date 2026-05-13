@@ -1,0 +1,7 @@
+# Directories
+backups/
+FONT/
+
+# Files
+.maps_api_key
+

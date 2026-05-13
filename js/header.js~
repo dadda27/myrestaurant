@@ -1,0 +1,120 @@
+/*This page contains the scripts that control the top main menu behaviours when the screen is shrank
+  (e.g, smartphone displays width), so the main menu cannot be shown horizontally as in wider screens. 
+  E.g., trigger the slide menu to show from top to bottom when clicking the burger button */
+  let click = false;
+  let getBody = document.querySelector("body");
+  let getBurgerBtn = document.querySelector(".burger");
+  let getMainMenu = document.querySelector(".main-menu-container");
+  let getSlideMenu = document.querySelector(".slide-menu-container");
+  let getSlideMenuItems = document.querySelectorAll(".slide-menu ul li");
+  let getSections = document.querySelector("section");
+  let getBurgerBar = document.querySelector(".burger div");
+  let getBurgerBarBefore = window.getComputedStyle(document.querySelector(".burger div"), ":before");
+  let getBurgerBarAfter = document.querySelector(":after");
+
+getBurgerBtn.addEventListener("click", function() {
+
+  let getWindowHeight = window.innerHeight;
+  let getMainMenuHeight = getMainMenu.clientHeight;
+  let getSlideMenuHeight = getSlideMenu.clientHeight;
+  let getMenusHeight = getMainMenuHeight + getSlideMenuHeight
+
+  /*Opening the slide menu on click*/
+  console.log(getWindowHeight);
+  if (click === false) {
+    click = true;
+
+    /*Changes the appearance of the menu burger button from a common 3 lines to an "X"*/
+      getBurgerBtn.classList.add("open");
+
+      /*If the slide menu doesn't fit entirely within the height of the display, 
+        it makes the slide menu scrollable instead of cutting it, 
+        else it shows the entire menu*/
+      if (getWindowHeight  <=  getMenusHeight) {
+
+        getSlideMenu.style.transition ="1s ease-in-out";
+        getSlideMenu.style.maxHeight = "calc(100vh - 100px)";
+        getSlideMenu.style.marginTop ="100px";
+        getSlideMenu.style.position ="fixed";
+        getSlideMenu.style.overflow="scroll";
+        getSlideMenu.style.zIndex = "1";
+        let menuItemsLenght = getSlideMenuItems.length;
+        for (let i = 0; i < menuItemsLenght; i++) {
+          getSlideMenuItems[i].style.visibility ="visible";
+        }
+      }
+        else {
+          getSlideMenu.style.transition ="1s ease-in-out";
+          getSlideMenu.style.marginTop ="100px";
+          getSlideMenu.style.position ="fixed";
+          getSlideMenu.style.overflow="scroll";
+          getSlideMenu.style.zIndex = "1";
+          let menuItemsLenght = getSlideMenuItems.length;
+          for (let i = 0; i < menuItemsLenght; i++) {
+            getSlideMenuItems[i].style.visibility ="visible";
+          }
+        }
+
+          /*if the slide-from-top menu is opened (browser window is narrow)
+            and then the browser window is enlarged to fit normal horizontal menu, 
+            it hides the slide-from-top menu and makes it unscrollable*/
+            window.addEventListener("resize", function() {
+              let getDinamicWindowHeight = window.innerHeight;
+                console.log(getDinamicWindowHeight);
+                if (click === true){
+                if (getDinamicWindowHeight <= getMenusHeight) {
+                  getSlideMenu.style.transition ="none";
+                  getSlideMenu.style.maxHeight = "calc(100vh - 100px)";
+                  getSlideMenu.style.marginTop ="100px";
+                  getSlideMenu.style.position ="fixed";
+                  getSlideMenu.style.overflowY="scroll";
+                  getSlideMenu.style.overflowX="hidden";
+                  getSlideMenu.style.zIndex = "1";
+                }
+
+                else {
+                  getSlideMenu.style.transition ="none";
+                  getSlideMenu.style.marginTop ="100px";
+                  getSlideMenu.style.position ="fixed";
+                }
+                }
+
+                })
+
+    }
+    /*Closes the slide-from-top menu: changes the "X" appearance of the burger button to normal 3 lines
+      and hides the menu above the top of the page*/
+    else {
+        click = false;
+        getBurgerBtn.classList.remove("open");
+
+          getSlideMenu.style.transition ="1s ease-in-out";
+          getSlideMenu.style.marginTop ="-350px";
+          let menuItemsLenght = getSlideMenuItems.length;
+          for (let i = 0; i < menuItemsLenght; i++) {
+            getSlideMenuItems[i].style.visibility ="hidden";
+          }
+        }
+
+
+  })
+
+ /*Changes the transparency of the menu background from transparent to opaque when scrolling*/
+  var prevScrollpos = window.pageYOffset;
+  console.log(prevScrollpos);
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      getMainMenu.style.backgroundColor = "rgba(245,245,245, 1)";
+            getMainMenu.style.transition = "0.3s";
+    } else {
+      getMainMenu.style.backgroundColor = "rgba(245,245,245, 0.3)";
+      getMainMenu.style.transition = "0.3s";
+    }
+    if (currentScrollPos === 0) {
+      getMainMenu.style.backgroundColor = "rgba(245,245,245, 0.3)";
+      getMainMenu.style.transition = "0.3s";
+    }
+
+    prevScrollpos = currentScrollPos;
+  }
